@@ -17,6 +17,7 @@ export const themeColor = {
     const options = {
       newColors: this.getAntdSerials(newColor), // new colors array, one-to-one corresponde with `matchColors`
       changeUrl (cssUrl) {
+        // 请把绝对路径去掉呢！！！ return `${cssUrl}`
         return `/${cssUrl}` // while router is not `hash` mode, it needs absolute path
       }
     }
